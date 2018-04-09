@@ -1,0 +1,41 @@
+{
+  "name": "Broilerplate",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A boilerplate to create a new application with react, koa and testing with ava and xo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava --verbose",
+    "start": "babel-node index.js",
+    "build": "webpack"
+  },
+  "author": "tassu <hello@tassu.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^1.0.0-beta.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "xo": "^0.20.3"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "kcors": "^2.2.1",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "sequelize": "^4.37.6",
+    "sqlite3": "^4.0.0"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  }
+}
