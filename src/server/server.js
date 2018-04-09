@@ -16,7 +16,7 @@ app.use(bodyParser());
 const router = new Router();
 
 router.get('/', async ctx => {
-	await send(ctx, './src/client/index.html');
+	await send(ctx, './src/client/assets/index.html');
 }).get('/bundle.js', async ctx => {
 	await send(ctx, './dist/bundle.js');
 });
