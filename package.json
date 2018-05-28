@@ -1,5 +1,5 @@
 {
-  "name": "Broilerplate",
+  "name": "broilerplate",
   "private": true,
   "version": "1.0.0",
   "description": "A boilerplate to create a new application with react, koa and testing with ava and xo.",
@@ -13,11 +13,13 @@
   "author": "tassu <hello@tassu.me>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/node": "^7.0.0-beta.49",
+    "@babel/preset-env": "7.0.0-beta.49",
+    "@babel/preset-react": "^7.0.0-beta.49",
     "ava": "^1.0.0-beta.3",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
     "eslint-config-xo-react": "^0.16.0",
     "eslint-plugin-react": "^7.7.0",
     "style-loader": "^0.20.3",
@@ -26,8 +28,9 @@
     "xo": "^0.20.3"
   },
   "dependencies": {
-    "babel-loader": "^7.1.4",
-    "babel-polyfill": "^6.26.0",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/polyfill": "^7.0.0-beta.49",
+    "babel-loader": "^8.0.0-beta.3",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "kcors": "^2.2.1",
@@ -47,13 +50,17 @@
       "test/**/*.js"
     ],
     "require": [
-      "babel-register"
+      "@babel/register"
     ]
   },
   "xo": {
     "extends": "xo-react",
     "rules": {
-      "import/no-unassigned-import": {"allow": ["**/*.css"]}
+      "import/no-unassigned-import": {
+        "allow": [
+          "**/*.css"
+        ]
+      }
     }
   }
 }
