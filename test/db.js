@@ -1,7 +1,7 @@
 import '@babel/polyfill';
 
 import test from 'ava';
-import sequelize from './../src/server/sequelize';
+import sequelize from '../src/server/sequelize';
 
 test.before('sequelize synchronizes', async t => {
 	await sequelize.sync();

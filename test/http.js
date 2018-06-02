@@ -1,7 +1,7 @@
 import '@babel/polyfill';
 
 import test from 'ava';
-import server from './../src/server/server';
+import server from '../src/server/server';
 
 test.before('server starts', async t => {
 	t.is(server.http(), null);
