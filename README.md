@@ -18,8 +18,12 @@ npm run dev # starts webpack in watch mode, starts web server and starts xo and 
 npm run build && npm test && npm start # builds files, runs tests and starts web server
 ```
 
+### Heroku
+Broilerplate works on Heroku. Just use the `heroku/heroku-buildpack-nodejs` buildpack.
+
+### Now.sh
+Broilerplate works on Now.sh by default. No configuration needed.
+
 ## TODO
 
 - [ ] Support HTTPS
-- [ ] Make it ready to deploy to Heroku
-- [ ] Make it ready to deploy to Now
