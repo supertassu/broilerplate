@@ -8,6 +8,7 @@
     "test": "xo && ava --verbose",
     "dev": "concurrently --names \"main,webpack,ava,xo\" \"babel-node index.js\" \"webpack --mode=\"development\" --watch\" \"ava --verbose --watch\" \"onchange '*.js' -i -- xo\"",
     "build": "webpack --mode=\"production\"",
+    "heroku-postbuild": "npm run build",
     "start": "babel-node index.js"
   },
   "author": "tassu <hello@tassu.me>",
