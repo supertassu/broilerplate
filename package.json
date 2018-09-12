@@ -21,7 +21,7 @@
     "xo": "^0.23.0"
   },
   "dependencies": {
-    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/cli": "^7.0.0",
     "@babel/node": "^7.0.0-beta.49",
     "@babel/preset-env": "7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0-beta.49",
