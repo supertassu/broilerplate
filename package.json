@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@babel/cli": "^7.0.0",
-    "@babel/node": "^7.0.0-beta.49",
+    "@babel/node": "^7.0.0",
     "@babel/preset-env": "7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0-beta.49",
     "@babel/core": "^7.0.1",
